@@ -1,10 +1,6 @@
 # subject priority difficulty hours
 # difficulty is integer with hard equal to 3 and easy at 1
 # priority is also integer
-subjects = [ ["DBMS", 1, 3, 3],
-    ["Software", 3, 3, 2],
-    ["OS", 2, 1, 3],
-    ["CO", 4, 3, 2], ]
 
 
 def calc_hours(subjects, free_hours):
@@ -48,6 +44,19 @@ def scheduler(subjects):
     for subject in subjects:
         diffs_order[ subject[2] ].append(subject)
     return diffs_order
+
+
+## Take input from user here
+print("Enter number of topics to learn: ")
+n = int(input())
+subjects = []
+print("Enter subject_name, priority ( 1 to", n, "), difficulty (1 easy, 2 medium, 3 hard), expected hours to complete topic ")
+for _ in range(n):
+    sub = input().split()
+    sub[1] = int(sub[1])
+    sub[2] = int(sub[2])
+    sub[3] = float(sub[3])
+    subjects.append(sub)
 
 free_hours = int(input("Free hours: "))
 subjects = calc_hours(subjects, free_hours)
