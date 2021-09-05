@@ -107,15 +107,15 @@ function end(subs) {
                 alert("Take 10 mins break");
             }
         }
-        //Completes all easy
-        while ((subs[0].length) > 0) {
-            alert(subs[0][0]);
-            subs[0].shift();
-            if ((subs[0].length) > 0) {
-                alert("Take 10 mins break");
-            }
-            alert("Schedule done")
+    }
+    //Completes all easy
+    while ((subs[0].length) > 0) {
+        alert(subs[0][0]);
+        subs[0].shift();
+        if ((subs[0].length) > 0) {
+            alert("Take 10 mins break");
         }
+        alert("Schedule done")
     }
 }
 function func() {
