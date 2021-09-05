@@ -1,5 +1,3 @@
-![s6](https://user-images.githubusercontent.com/68862467/132124954-bbb135df-ca25-4587-a9a9-427f40ec9cd0.png)
-![s6](https://user-images.githubusercontent.com/68862467/132124958-6ee00c2e-ee9a-4876-a530-d182ac79b04e.png)
 # Organise Learning
 ## The objective of the project is to simpify our daily study schedule. The project takes the input from the users on the number of subjects they want to study per day. In addition to that it also asks the users to set a priority for each subject with respect to their level of difficulty. The project estimate the number of hours they should study each subject on the basis of their inputs. The algorithm used is just right for them which helps them not only to study in an organised manner but also it asks the user to take quality breaks whenever necessary. It also provide them with necessary resources for them to refer.
 ## We used HTML, CSS and JavaScript. No opensource code or libraries were used.
