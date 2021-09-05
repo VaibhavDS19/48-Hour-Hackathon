@@ -47,6 +47,8 @@ def scheduler(subjects):
 
 
 ## Take input from user here
+##############################################################
+
 print("Enter number of topics to learn: ")
 n = int(input())
 subjects = []
