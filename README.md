@@ -8,7 +8,7 @@
 #Screenshots
 ## 1. Home Page:
 ![s1](https://user-images.githubusercontent.com/68862467/132124831-565bf5a2-8d1b-4ead-b7fb-97a6cb1ccad1.png)
-## 2. A pop-up window which asks to enter the number of topics(Eg.,2) when 'Click to create Schedule" is pressesd:
+## 2. A pop-up window which asks user to enter the number of topics(Eg.,2) when 'Click to create Schedule" is pressesd:
 ![s2](https://user-images.githubusercontent.com/68862467/132124835-4e53d724-a732-414d-a5c6-ed072f2a083b.png)
 ## 3. A pop-up window which asks to enter the details of each topics(Eg.,Operating System,1,1,1):
 ![s3](https://user-images.githubusercontent.com/68862467/132124838-29f19cd9-b150-4901-a86b-de5ee674e2cc.png)
