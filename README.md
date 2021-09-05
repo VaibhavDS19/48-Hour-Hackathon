@@ -10,11 +10,11 @@
 ![s1](https://user-images.githubusercontent.com/68862467/132124831-565bf5a2-8d1b-4ead-b7fb-97a6cb1ccad1.png)
 ## 2. A pop-up window which asks user to enter the number of topics(Eg.,2) when 'Click to create Schedule" is pressesd:
 ![s2](https://user-images.githubusercontent.com/68862467/132124835-4e53d724-a732-414d-a5c6-ed072f2a083b.png)
-## 3. A pop-up window which asks to enter the details of each topics(Eg.,Operating System,1,1,1):
+## 3. A pop-up window which asks user to enter the details of each topics(Eg.,Operating System,1,1,1):
 ![s3](https://user-images.githubusercontent.com/68862467/132124838-29f19cd9-b150-4901-a86b-de5ee674e2cc.png)
-## 4. A pop-up window which asks to enter the details of each topics(Eg.,Data Structures,2,2,4):
+## 4. A pop-up window which asks user to enter the details of each topics(Eg.,Data Structures,2,2,4):
 ![s4](https://user-images.githubusercontent.com/68862467/132124839-22172aac-ae41-4dbe-b67d-1be4f227fed4.png)
-## 5. Case1 :A pop-up window which asks to enter the free hours(Eg.,5),when the free time is greater than or equal to required hours:
+## 5. Case1 :A pop-up window which asks user to enter the free hours(Eg.,5),when the free time is greater than or equal to required hours:
 ![s5](https://user-images.githubusercontent.com/68862467/132124840-e32681cd-f354-49e0-8d80-5ee9ea44563c.png)
 ## 6. A pop-up window saying "Schedule done.Please scroll below for details": 
 ![s6](https://user-images.githubusercontent.com/68862467/132124968-c6578be8-3c78-485e-8de9-9b389571c499.png)
