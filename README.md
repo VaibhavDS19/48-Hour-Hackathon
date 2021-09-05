@@ -28,6 +28,6 @@
 ![s9](https://user-images.githubusercontent.com/68862467/132124851-5fcebba0-896b-4ca1-9332-b2df40a0db61.png)
 ## 10. The details of the schedule is displayed at the bottom of the page:
 ![s10](https://user-images.githubusercontent.com/68862467/132124852-dcb32222-50c1-488d-9d40-eaa22cba7549.png)
-## 11. Meeting scrrenshot:
+## 11. Meeting screenshot:
 ![s11](https://user-images.githubusercontent.com/68862467/132124913-f69d4bdf-0fbe-4ff9-9f9a-8aee928fdd66.jpeg)
 
