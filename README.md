@@ -5,7 +5,7 @@
 ## 2.Extract all the files and place it in a folder 
 ## 3.Copy the file path of 'index.html' 
 ## 4. run it on any browser(Eg., google chrome )
-#Screenshots
+# Screenshots
 ## 1. Home Page:
 ![s1](https://user-images.githubusercontent.com/68862467/132124831-565bf5a2-8d1b-4ead-b7fb-97a6cb1ccad1.png)
 ## 2. A pop-up window which asks user to enter the number of topics(Eg.,2) when 'Click to create Schedule" is pressesd:
