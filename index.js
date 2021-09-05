@@ -75,11 +75,11 @@ function end(subs) {
     let para = document.getElementById('list');
     // Completes all hard
     while ((subs[2].length) > 0) {
-        let message = "Study " + subs[2][0][0] + " for " + subs[2][0][3] + " hours</br>";
+        let message = "Study " + subs[2][0][0] + " for " + subs[2][0][3] + " hours</br><br>";
         para.innerHTML += message;
         subs[2].shift()
         if ((subs[now].length) > 0) {
-            let message = "Study " + subs[now][0][0] + " for " + subs[now][0][3] + " hours</br>";
+            let message = "Study " + subs[now][0][0] + " for " + subs[now][0][3] + " hours</br><br>";
             para.innerHTML += message;
             subs[now].shift();
             now = 1 - now;
@@ -87,43 +87,43 @@ function end(subs) {
         else {
             now = 1 - now;
             if ((subs[now][0].length) > 0) {
-                let message = "Study " + subs[now][0][0] + " for " + subs[now][0][3] + " hours</br>";
+                let message = "Study " + subs[now][0][0] + " for " + subs[now][0][3] + " hours</br><br>";
                 para.innerHTML += message;
                 subs[now].shift();
             }
             else {
                 if ((subs[2].length) > 0) {
-                    alert("Take 15 mins break")
+                    para.innerHTML += "Take 10 mins break<br><br>";
                 }
             }
         }
     }
     //Completes all medium
     while ((subs[1].length) > 0) {
-        let message = "Study " + subs[1][0][0] + " for " + subs[1][0][3] + " hours</br>";
+        let message = "Study " + subs[1][0][0] + " for " + subs[1][0][3] + " hours</br><br>";
         para.innerHTML += message;
         subs[1].shift();
         if ((subs[0].length) > 0) {
-            let message = "Study " + subs[0][0][0] + " for " + subs[0][0][3] + " hours</br>";
+            let message = "Study " + subs[0][0][0] + " for " + subs[0][0][3] + " hours</br><br>";
             para.innerHTML += message;
             subs[0].shift();
         }
         else {
             if ((subs[1].length) > 0) {
-                alert("Take 10 mins break");
+                para.innerHTML += "Take 10 mins break<br><br>";
             }
         }
     }
     //Completes all easy
     while ((subs[0].length) > 0) {
-        let message = "Study " + subs[0][0][0] + " for " + subs[0][0][3] + " hours<br>";
+        let message = "Study " + subs[0][0][0] + " for " + subs[0][0][3] + " hours<br><br>";
         para.innerHTML += message;
         subs[0].shift();
         if ((subs[0].length) > 0) {
-            alert("Take 10 mins break");
+            para.innerHTML += "Take 10 mins break<br><br>";
         }
-        alert("Schedule done")
     }
+    alert("Schedule done. Please scroll below for details.")
 }
 function func() {
     subjects = fn();
@@ -131,31 +131,6 @@ function func() {
     subjects = calc_hours(subjects, free_hours)
     subjects = scheduler(subjects)
     end(subjects)
-}
-
-function input() {
-    let subs = Array(3);
-    let s1 = Array(4);
-    s1[0] = "OS"
-    s1[1] = 10
-    s1[2] = 2
-    s1[3] = 3
-
-    let s2 = Array(4);
-    s2[0] = "SE"
-    s2[1] = 1
-    s2[2] = 3
-    s2[3] = 2
-
-    let s3 = Array(4);
-    s3[0] = "CN"
-    s3[1] = 2
-    s3[2] = 3
-    s3[3] = 3
-    subs[0] = s1;
-    subs[1] = s2;
-    subs[2] = s3;
-    return subs;
 }
 
 function fn() {
