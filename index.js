@@ -72,20 +72,23 @@ function scheduler(subjects) {
 
 function end(subs) {
     let now = 0
+    let para = document.getElementById('list');
     // Completes all hard
     while ((subs[2].length) > 0) {
-        let message = "Study " + subs[2][0][0] + " for " + subs[2][0][3] + "hours\n";
-        alert(message);
+        let message = "Study " + subs[2][0][0] + " for " + subs[2][0][3] + " hours</br>";
+        para.innerHTML += message;
         subs[2].shift()
         if ((subs[now].length) > 0) {
-            alert(subs[now][0][0]);
+            let message = "Study " + subs[now][0][0] + " for " + subs[now][0][3] + " hours</br>";
+            para.innerHTML += message;
             subs[now].shift();
             now = 1 - now;
         }
         else {
             now = 1 - now;
             if ((subs[now][0].length) > 0) {
-                alert(subs[now][0][0]);
+                let message = "Study " + subs[now][0][0] + " for " + subs[now][0][3] + " hours</br>";
+                para.innerHTML += message;
                 subs[now].shift();
             }
             else {
@@ -97,10 +100,12 @@ function end(subs) {
     }
     //Completes all medium
     while ((subs[1].length) > 0) {
-        alert(subs[1][0]);
+        let message = "Study " + subs[1][0][0] + " for " + subs[1][0][3] + " hours</br>";
+        para.innerHTML += message;
         subs[1].shift();
         if ((subs[0].length) > 0) {
-            alert(subs[0][0]);
+            let message = "Study " + subs[0][0][0] + " for " + subs[0][0][3] + " hours</br>";
+            para.innerHTML += message;
             subs[0].shift();
         }
         else {
@@ -111,7 +116,8 @@ function end(subs) {
     }
     //Completes all easy
     while ((subs[0].length) > 0) {
-        alert(subs[0][0]);
+        let message = "Study " + subs[0][0][0] + " for " + subs[0][0][3] + " hours<br>";
+        para.innerHTML += message;
         subs[0].shift();
         if ((subs[0].length) > 0) {
             alert("Take 10 mins break");
@@ -156,8 +162,8 @@ function fn() {
     let n = Number(prompt("Enter the number of topics: "))
     let subs = Array(n);
     for (let i = 0; i < n; i++) {
-        let arr = prompt('Enter subject_name, priority ( 1 to n ), difficulty (1 easy, 2 medium, 3 hard), expected hours to complete topic')
-        let arrs = arr.split(' ')
+        let arr = prompt('Enter Subject name, Priority ( 1 to n ), difficulty (1 easy, 2 medium, 3 hard), expected hours to complete topic\n For eg.,Operating System,1,2,2')
+        let arrs = arr.split(',')
         arrs[1] = Number(arrs[1])
         arrs[2] = Number(arrs[2])
         arrs[3] = Number(arrs[3])
