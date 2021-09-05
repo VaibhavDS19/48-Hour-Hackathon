@@ -74,7 +74,8 @@ function end(subs) {
     let now = 0
     // Completes all hard
     while ((subs[2].length) > 0) {
-        alert("Study " + subs[2][0][0] + " for " + subs[2][0][3] + "hours");
+        let message = "Study " + subs[2][0][0] + " for " + subs[2][0][3] + "hours\n";
+        alert(message);
         subs[2].shift()
         if ((subs[now].length) > 0) {
             alert(subs[now][0][0]);
